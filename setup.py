@@ -21,14 +21,14 @@ setuptools.setup(
     description=DESCRIPTION,
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url=GITHUB_URL,
+    #url=GITHUB_URL,
     packages=[
         'facenet_pytorch',
         'facenet_pytorch.models',
         'facenet_pytorch.models.utils',
         'facenet_pytorch.data',
     ],
-    package_dir={'facenet_pytorch':'.'},
+    package_dir={'facenet_pytorch':'facenet_pytorch'},
     package_data={'': ['*net.pt']},
     classifiers=[
         "Programming Language :: Python :: 3",
